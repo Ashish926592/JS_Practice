@@ -1,12 +1,4 @@
-<!-- 3. Write a function that takes an object as argument. It should return an object with all original object properties. except for the property with key 'b'
-myFunction({ a: 1, b: 7, c: 3 })
-Expected { a: 1, c: 3 }
-myFunction({ b: 0, a: 7, d: 8 })
-Expected { a: 7, d: 8 } -->
 
-<!-- const obj1 = {
-
-} -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,19 +15,34 @@ Expected { a: 7, d: 8 } -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+ <!-- freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }) ➞ false
+  freeShipping({ "Flatscreen TV": 399.99 })  ➞ true
+   freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }) ➞ true -->
 <body>
    
     <div id="Output"></div>
     <script>
-myFunction({ a: 1, b: 7, c: 3 })
+ freeShipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 })
+ freeShipping({ "Flatscreen TV": 399.99 })
+ freeShipping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 })
 
-myFunction({ b: 0, a: 7, d: 8 })
+function freeShipping(str){
 
-function myFunction(str){
-    delete str["b"];
-    console.log(str);
-    $("#Output").append(JSON.stringify(str));
+    let split1 = Object.values(str) ;
+    // console.log(split1[0]);
+    count = 0;  
+    for(let i = 0 ; i < split1.length ; i++){
+        count = count + split1[i] ;
+        
+    }
+    if(count < 50){
+
+        $("#Output").append(JSON.stringify("false"));
+    }else{
+        $("#Output").append(JSON.stringify("true"));
+    }
+
+    // console.log(count);
 }
 
     </script>
