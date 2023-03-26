@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -39,7 +39,24 @@
 
 
 
-    </script>
+    </script> -->
+
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+<div id="Output"></div>
+<script>
+    $("#btn").click(function(){
+      function hello(a){
+
+        let space = a.replaceAll(" ", "");
+        console.log(space);
+
+       
+
+
+      }
+      hello("the sky is blue")
+    })
+</script>
 
 
 

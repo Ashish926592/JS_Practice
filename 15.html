@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
     <label for="">Enter second String</label>
 
@@ -24,8 +24,8 @@
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
 
-    <div id="Output"></div>
-
+    <div id="Output"></div> -->
+<!-- 
     <script>
         $("#btn").click(function () {
             const a = $("#Input1").val();
@@ -45,10 +45,27 @@
             myFunction(a,b);
 
         });
+    </script> -->
+
+
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+    <div id="Output"></div>
+    <script>
+        $("#btn").click(function(){
+          function hello(a,b){
+    
+         if(a.length == b.length){
+            console.log(true);
+         }
+         else {
+            console.log(false);
+         }
+    
+    
+          }
+          hello("AB","BB")
+        })
     </script>
-
-
-
 </body>
 
 </html>

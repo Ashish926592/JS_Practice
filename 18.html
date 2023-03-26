@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">First Number:</label>
+    <!-- <label for="">First Number:</label>
     <input type="text" id="input1">
     <label for="">second Number:</label>
     <input type="text" id="input2">
@@ -46,6 +46,26 @@
            }
            Discount(a,b);
 
+        })
+
+
+
+    </script> -->
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+    <div id="Output"></div>
+    <script>
+        $("#btn").click(function(){
+          function hello(a,b){
+    
+            let ds = a * (b/100)
+
+            ps = a - ds;
+
+            console.log(ps);
+
+    
+          }
+          hello(1500,50)
         })
     </script>
 </body>

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -33,7 +33,25 @@
             }
             myFunction(a);
         });
-    </script>
+    </script> -->
+
+<button type="button" class="btn btn-primary" id="btn">Submit</button>
+<div id="Output"></div>
+<script>
+    $("#btn").click(function(){
+      function hello(a){
+
+        // let str  = a.split(" ");
+        let str2 = a.filter((item,index) => a.indexOf(item) === index);
+        console.log(str2);
+        $("#Output").text((str2));
+
+
+      }
+      hello([1,0,1,0])
+      hello(["the","big","cat"])
+    })
+</script>
 
 
 

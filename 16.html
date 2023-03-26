@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -42,7 +42,29 @@
             }
             myFunction(a);
         });
-    </script>
+    </script> -->
+
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+<div id="Output"></div>
+<script>
+    $("#btn").click(function(){
+      function hello(str){
+
+       let sort1 = str.sort((a,b ) => a-b)
+       let sort2 = []
+       for (let i =0;i < sort1.length;i++) {
+            if(sort1[i] > 0){
+                sort2 += sort1[i];
+            }
+       }
+
+       console.log(Number(sort2[0]) + Number(sort2[1]));
+
+
+      }
+      hello([2,9,6,-1])
+    })
+</script>
 </body>
 
 </html>

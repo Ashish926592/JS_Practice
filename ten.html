@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -34,16 +34,29 @@
 
 
             }
-
             myFunction(a);
-
-
-
         });
+    </script> -->
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+<div id="Output"></div>
+<script>
+    $("#btn").click(function(){
+      function hello(str){
 
 
+        let str1  = str.reduce((acc,bcc) => {
+           return acc[bcc] ? ++acc[bcc] : acc[bcc] = 1, acc
+        },{});
+        // const output = str.reduce(function (acc, curr) {
+        //             return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+        //         }, {});
+        console.log(str1);
+      
 
-    </script>
+      }
+      hello(['a','b','b'])
+    })
+</script>
 
 
 

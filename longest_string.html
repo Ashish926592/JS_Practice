@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
 
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -36,9 +36,22 @@
             }
             myFunction(a);
         });
+    </script> -->
+
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+    <div id="Output"></div>
+    <script>
+        $("#btn").click(function(){
+          function hello(a){
+    
+            let str  = a.reduce((a,b) => a.length > b.length ? a : b);
+            $("#Output").text(str);
+    
+    
+          }
+          hello(['help','me'])
+        })
     </script>
-
-
 
 </body>
 

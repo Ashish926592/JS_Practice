@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">Enter String</label>
+    <!-- <label for="">Enter String</label>
     <input type="text" id="Input"><br>
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
     
@@ -26,9 +26,26 @@
               $("#Output").text(str1);
 
         });
-    </script>
+    </script> -->
 
-    
+            <button type="button" class="btn btn-primary" id="btn">Submit</button>
+            <div id="Output"></div>
+            <script>
+                $("#btn").click(function(){
+                function hello(a){
+
+                    let str  = a.split(" ").reverse();
+                    let str2 = str.join(" ");
+                    console.log(str2);
+                    $("#Output").text(str2);
+
+
+                }
+                hello("the sky is blue")
+                })
+            </script>
+
+
     
 </body>
 </html>

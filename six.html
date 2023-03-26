@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
     <label for="">Enter second String</label>
     <input type="text" id="Input2"><br>
@@ -41,8 +41,27 @@
              
 
         });
-    </script>
+    </script> -->
 
+
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+    <div id="Output"></div>
+    <script>
+        $("#btn").click(function(){
+          function hello(a,b){
+
+           if(a < b){
+            $("#Output").text(a / b);
+           }
+           else{
+            $("#Output").text(a * b);
+
+           }
+
+          }
+          hello(10,100)
+        })
+    </script>
     
     
 </body>

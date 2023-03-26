@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">Enter first String</label>
+    <!-- <label for="">Enter first String</label>
     <input type="text" id="Input1"><br>
   
     <button type="button" class="btn btn-primary" id="btn">Submit</button>
@@ -44,9 +44,27 @@
         
 
         
-    </script>
+    </script> -->
 
-    
+    <button type="button" class="btn btn-primary" id="btn">Submit</button>
+<div id="Output"></div>
+<script>
+    $("#btn").click(function(){
+      function hello(str){
+
+        let str1  = str.sort((a,b) => b-a);
+
+        console.log(str1);
+        $("#Output").text(str1);
+
+
+       
+
+
+      }
+      hello([1,3,2])
+    })
+</script>
     
 </body>
 </html>
