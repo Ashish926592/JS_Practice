@@ -42,24 +42,15 @@
 <script>
     $("#btn").click(function(){
       function hello(str){
-
-
         let str1  = str.reduce((acc,bcc) => {
            return acc[bcc] ? ++acc[bcc] : acc[bcc] = 1, acc
-        },{});
-        // const output = str.reduce(function (acc, curr) {
-        //             return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
-        //         }, {});
-        console.log(str1);
-      
+        },{}); 
 
+        console.log(str1);
       }
       hello(['a','b','b'])
     })
 </script>
-
-
-
 </body>
 
 </html>

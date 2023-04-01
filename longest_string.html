@@ -29,7 +29,6 @@
                 const split1 = a.split(" ");
                 var longest = split1.reduce(
                     function (a, b) {
-                        return a.length > b.length ? a : b;
                     }
                 )
                 $("#Output").text(longest);
@@ -46,8 +45,6 @@
     
             let str  = a.reduce((a,b) => a.length > b.length ? a : b);
             $("#Output").text(str);
-    
-    
           }
           hello(['help','me'])
         })

@@ -28,6 +28,7 @@ Expected { a: 7, d: 8 } -->
    
     <div id="Output"></div>
     <script>
+        
 myFunction({ a: 1, b: 7, c: 3 })
 
 myFunction({ b: 0, a: 7, d: 8 })
@@ -35,7 +36,7 @@ myFunction({ b: 0, a: 7, d: 8 })
 function myFunction(str){
     delete str["b"];
     console.log(str);
-    $("#Output").append(JSON.stringify(str));
+    $("#Output").append(str);
 }
 
     </script>
